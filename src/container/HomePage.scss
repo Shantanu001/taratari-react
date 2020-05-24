@@ -1,0 +1,49 @@
+.filter-bar{
+    background-color:#FFFFFF;
+}
+.filter-bar .sortby{
+    background-color:#FFFFFF;
+}
+
+.filter-bar .heading {
+    font-family: fantasy;
+    font-size: 3vh;;
+    margin: 0px;
+}
+
+.filter-bar .filter {
+    font-family: fantasy;
+    font-size: 3vh;;
+}
+.filter-bar .fiter-tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-bar{
+    background-color:#F5F5F5;
+}
+
+.content-bar .sortby{
+    background-color:#FFFFFF;
+    height: 12%;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: row;
+    padding:0.5%;
+}
+
+.explore {
+    height: 80vh;
+}
+
+.container {
+    height: 100%;
+    max-width: 100%;
+  }
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
