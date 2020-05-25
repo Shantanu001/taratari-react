@@ -4,6 +4,7 @@ import './App.css';
 import LandingPage from './LandingPage';
 import HomePage from './HomePage';
 import SellerCategory from './SellerCategory';
+import ItemDetail from './ItemDetail';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path='/' component={LandingPage} />
           <Route path='/home' component={HomePage}/>
           <Route path='/category' component={SellerCategory}/>
+          <Route path='/ItemDetail' component={ItemDetail}/>
         </Switch>
       </Router>
     </div>
