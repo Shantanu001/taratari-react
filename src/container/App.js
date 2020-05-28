@@ -5,6 +5,8 @@ import LandingPage from './LandingPage';
 import HomePage from './HomePage';
 import Category from './Category';
 import ItemDetail from './ItemDetail';
+import Form1 from './Form1';  
+import Form2 from './Form2'; 
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path='/home' component={HomePage}/>
           <Route path='/ItemDetail' component={ItemDetail}/>
           <Route path='/Category' component={Category}/>
+          <Route path='/form1' component={Form1}/>
+          <Route path='/form2' component={Form2}/>
         </Switch>
       </Router>
     </div>

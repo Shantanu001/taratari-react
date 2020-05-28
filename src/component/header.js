@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import "./header.scss";
 
 const header = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const history = useHistory();
   return (
     <Container fluid>
