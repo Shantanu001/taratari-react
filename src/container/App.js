@@ -7,6 +7,7 @@ import Category from './Category';
 import ItemDetail from './ItemDetail';
 import Form1 from './Form1';  
 import Form2 from './Form2'; 
+import Form3 from './Form3'; 
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/Category' component={Category}/>
           <Route path='/form1' component={Form1}/>
           <Route path='/form2' component={Form2}/>
+          <Route path='/form3' component={Form3}/>
         </Switch>
       </Router>
     </div>

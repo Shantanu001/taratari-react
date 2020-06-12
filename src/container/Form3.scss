@@ -1,0 +1,14 @@
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    font-family: fantasy;
+    margin-top: 2%;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}

@@ -39,7 +39,7 @@ const Form2 = () => {
           </Form>
           <Button
             onClick={() => {
-              history.push("/form2");
+              history.push("/form3");
             }}
           >
             Save&Continue
