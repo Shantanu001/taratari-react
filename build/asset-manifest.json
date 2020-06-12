@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/taratari-react/static/css/main.3cf342fe.chunk.css",
-    "main.js": "/taratari-react/static/js/main.2094db36.chunk.js",
-    "main.js.map": "/taratari-react/static/js/main.2094db36.chunk.js.map",
+    "main.js": "/taratari-react/static/js/main.d0c2aa5c.chunk.js",
+    "main.js.map": "/taratari-react/static/js/main.d0c2aa5c.chunk.js.map",
     "runtime-main.js": "/taratari-react/static/js/runtime-main.106bdcfa.js",
     "runtime-main.js.map": "/taratari-react/static/js/runtime-main.106bdcfa.js.map",
     "static/js/2.6bd42263.chunk.js": "/taratari-react/static/js/2.6bd42263.chunk.js",
     "static/js/2.6bd42263.chunk.js.map": "/taratari-react/static/js/2.6bd42263.chunk.js.map",
     "index.html": "/taratari-react/index.html",
-    "precache-manifest.91628ddb2fbb28abe8ddf939ad043578.js": "/taratari-react/precache-manifest.91628ddb2fbb28abe8ddf939ad043578.js",
+    "precache-manifest.1674ce85eb6548d062ea2e8462560972.js": "/taratari-react/precache-manifest.1674ce85eb6548d062ea2e8462560972.js",
     "service-worker.js": "/taratari-react/service-worker.js",
     "static/css/main.3cf342fe.chunk.css.map": "/taratari-react/static/css/main.3cf342fe.chunk.css.map",
     "static/js/2.6bd42263.chunk.js.LICENSE.txt": "/taratari-react/static/js/2.6bd42263.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.106bdcfa.js",
     "static/js/2.6bd42263.chunk.js",
     "static/css/main.3cf342fe.chunk.css",
-    "static/js/main.2094db36.chunk.js"
+    "static/js/main.d0c2aa5c.chunk.js"
   ]
 }

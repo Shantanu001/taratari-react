@@ -8,8 +8,8 @@
 4 verbose run-script [ 'predeploy', 'deploy', 'postdeploy' ]
 5 info lifecycle taratari-react@0.1.0~predeploy: taratari-react@0.1.0
 6 verbose lifecycle taratari-react@0.1.0~predeploy: unsafe-perm in lifecycle true
-7 verbose lifecycle taratari-react@0.1.0~predeploy: PATH: /Users/shantanujaiswal/.nvm/versions/node/v6.14.4/lib/node_modules/npm/bin/node-gyp-bin:/Users/shantanujaiswal/work/myProjects/taratari-react/node_modules/.bin:/Users/shantanujaiswal/.nvm/versions/node/v6.14.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shantanujaiswal/Downloads/apache-maven-3.6.2/bin:/Users/shantanujaiswal/work/myProjects/flutter projects/flutter/bin:/usr/local/mysql/bin
-8 verbose lifecycle taratari-react@0.1.0~predeploy: CWD: /Users/shantanujaiswal/work/myProjects/taratari-react
+7 verbose lifecycle taratari-react@0.1.0~predeploy: PATH: /Users/shantanujaiswal/.nvm/versions/node/v6.14.4/lib/node_modules/npm/bin/node-gyp-bin:/Users/shantanujaiswal/work/myProjects/test/taratari-react/node_modules/.bin:/Users/shantanujaiswal/.nvm/versions/node/v6.14.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shantanujaiswal/Downloads/apache-maven-3.6.2/bin:/Users/shantanujaiswal/work/myProjects/flutter projects/flutter/bin:/usr/local/mysql/bin
+8 verbose lifecycle taratari-react@0.1.0~predeploy: CWD: /Users/shantanujaiswal/work/myProjects/test/taratari-react
 9 silly lifecycle taratari-react@0.1.0~predeploy: Args: [ '-c', 'npm run build' ]
 10 silly lifecycle taratari-react@0.1.0~predeploy: Returned: code: 1  signal: null
 11 info lifecycle taratari-react@0.1.0~predeploy: Failed to exec predeploy script
@@ -24,7 +24,7 @@
 12 verbose stack     at maybeClose (internal/child_process.js:920:16)
 12 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
 13 verbose pkgid taratari-react@0.1.0
-14 verbose cwd /Users/shantanujaiswal/work/myProjects/taratari-react
+14 verbose cwd /Users/shantanujaiswal/work/myProjects/test/taratari-react
 15 error Darwin 17.7.0
 16 error argv "/Users/shantanujaiswal/.nvm/versions/node/v6.14.4/bin/node" "/Users/shantanujaiswal/.nvm/versions/node/v6.14.4/bin/npm" "run" "deploy"
 17 error node v6.14.4
