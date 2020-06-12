@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path='/' component={LandingPage} />
+          <Route exact path='/taratari-react' component={LandingPage} />
           <Route path='/home' component={HomePage}/>
           <Route path='/ItemDetail' component={ItemDetail}/>
           <Route path='/Category' component={Category}/>
