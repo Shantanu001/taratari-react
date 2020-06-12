@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cf342fe.chunk.css",
-    "main.js": "/static/js/main.d0c2aa5c.chunk.js",
-    "main.js.map": "/static/js/main.d0c2aa5c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e097a9f3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e097a9f3.js.map",
-    "static/js/2.6bd42263.chunk.js": "/static/js/2.6bd42263.chunk.js",
-    "static/js/2.6bd42263.chunk.js.map": "/static/js/2.6bd42263.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.5bb956d69ffe677ac4aefdb69f360a16.js": "/precache-manifest.5bb956d69ffe677ac4aefdb69f360a16.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.3cf342fe.chunk.css.map": "/static/css/main.3cf342fe.chunk.css.map",
-    "static/js/2.6bd42263.chunk.js.LICENSE.txt": "/static/js/2.6bd42263.chunk.js.LICENSE.txt",
-    "static/media/Screen Shot 2020-05-28 at 5.50.34 PM.png": "/static/media/Screen Shot 2020-05-28 at 5.50.34 PM.4e54b84c.png",
-    "static/media/bmw-57e3d44049_1280.jpg": "/static/media/bmw-57e3d44049_1280.672b5635.jpg",
-    "static/media/c8aa7a41b257939d2ee64cc128b297ec.jpg": "/static/media/c8aa7a41b257939d2ee64cc128b297ec.518e1a00.jpg",
-    "static/media/ecommerce2-1.png": "/static/media/ecommerce2-1.3b2051fd.png",
-    "static/media/search.png": "/static/media/search.bbebd881.png"
+    "main.css": "/taratari-react/static/css/main.3cf342fe.chunk.css",
+    "main.js": "/taratari-react/static/js/main.4508e4a9.chunk.js",
+    "main.js.map": "/taratari-react/static/js/main.4508e4a9.chunk.js.map",
+    "runtime-main.js": "/taratari-react/static/js/runtime-main.106bdcfa.js",
+    "runtime-main.js.map": "/taratari-react/static/js/runtime-main.106bdcfa.js.map",
+    "static/js/2.6bd42263.chunk.js": "/taratari-react/static/js/2.6bd42263.chunk.js",
+    "static/js/2.6bd42263.chunk.js.map": "/taratari-react/static/js/2.6bd42263.chunk.js.map",
+    "index.html": "/taratari-react/index.html",
+    "precache-manifest.665d74034b99f25b2a05caef59d8f2b4.js": "/taratari-react/precache-manifest.665d74034b99f25b2a05caef59d8f2b4.js",
+    "service-worker.js": "/taratari-react/service-worker.js",
+    "static/css/main.3cf342fe.chunk.css.map": "/taratari-react/static/css/main.3cf342fe.chunk.css.map",
+    "static/js/2.6bd42263.chunk.js.LICENSE.txt": "/taratari-react/static/js/2.6bd42263.chunk.js.LICENSE.txt",
+    "static/media/Screen Shot 2020-05-28 at 5.50.34 PM.png": "/taratari-react/static/media/Screen Shot 2020-05-28 at 5.50.34 PM.4e54b84c.png",
+    "static/media/bmw-57e3d44049_1280.jpg": "/taratari-react/static/media/bmw-57e3d44049_1280.672b5635.jpg",
+    "static/media/c8aa7a41b257939d2ee64cc128b297ec.jpg": "/taratari-react/static/media/c8aa7a41b257939d2ee64cc128b297ec.518e1a00.jpg",
+    "static/media/ecommerce2-1.png": "/taratari-react/static/media/ecommerce2-1.3b2051fd.png",
+    "static/media/search.png": "/taratari-react/static/media/search.bbebd881.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e097a9f3.js",
+    "static/js/runtime-main.106bdcfa.js",
     "static/js/2.6bd42263.chunk.js",
     "static/css/main.3cf342fe.chunk.css",
-    "static/js/main.d0c2aa5c.chunk.js"
+    "static/js/main.4508e4a9.chunk.js"
   ]
 }
