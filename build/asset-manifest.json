@@ -1,27 +1,39 @@
 {
   "files": {
-    "main.css": "/taratari-react/static/css/main.3cf342fe.chunk.css",
-    "main.js": "/taratari-react/static/js/main.4508e4a9.chunk.js",
-    "main.js.map": "/taratari-react/static/js/main.4508e4a9.chunk.js.map",
+    "main.css": "/taratari-react/static/css/main.30bd9448.chunk.css",
+    "main.js": "/taratari-react/static/js/main.c8b790a9.chunk.js",
+    "main.js.map": "/taratari-react/static/js/main.c8b790a9.chunk.js.map",
     "runtime-main.js": "/taratari-react/static/js/runtime-main.106bdcfa.js",
     "runtime-main.js.map": "/taratari-react/static/js/runtime-main.106bdcfa.js.map",
-    "static/js/2.6bd42263.chunk.js": "/taratari-react/static/js/2.6bd42263.chunk.js",
-    "static/js/2.6bd42263.chunk.js.map": "/taratari-react/static/js/2.6bd42263.chunk.js.map",
+    "static/js/2.169229f2.chunk.js": "/taratari-react/static/js/2.169229f2.chunk.js",
+    "static/js/2.169229f2.chunk.js.map": "/taratari-react/static/js/2.169229f2.chunk.js.map",
     "index.html": "/taratari-react/index.html",
-    "precache-manifest.665d74034b99f25b2a05caef59d8f2b4.js": "/taratari-react/precache-manifest.665d74034b99f25b2a05caef59d8f2b4.js",
+    "precache-manifest.3577e761775566382c5077781fc459db.js": "/taratari-react/precache-manifest.3577e761775566382c5077781fc459db.js",
     "service-worker.js": "/taratari-react/service-worker.js",
-    "static/css/main.3cf342fe.chunk.css.map": "/taratari-react/static/css/main.3cf342fe.chunk.css.map",
-    "static/js/2.6bd42263.chunk.js.LICENSE.txt": "/taratari-react/static/js/2.6bd42263.chunk.js.LICENSE.txt",
+    "static/css/main.30bd9448.chunk.css.map": "/taratari-react/static/css/main.30bd9448.chunk.css.map",
+    "static/js/2.169229f2.chunk.js.LICENSE.txt": "/taratari-react/static/js/2.169229f2.chunk.js.LICENSE.txt",
     "static/media/Screen Shot 2020-05-28 at 5.50.34 PM.png": "/taratari-react/static/media/Screen Shot 2020-05-28 at 5.50.34 PM.4e54b84c.png",
     "static/media/bmw-57e3d44049_1280.jpg": "/taratari-react/static/media/bmw-57e3d44049_1280.672b5635.jpg",
     "static/media/c8aa7a41b257939d2ee64cc128b297ec.jpg": "/taratari-react/static/media/c8aa7a41b257939d2ee64cc128b297ec.518e1a00.jpg",
+    "static/media/cars.png": "/taratari-react/static/media/cars.fe79b5de.png",
     "static/media/ecommerce2-1.png": "/taratari-react/static/media/ecommerce2-1.3b2051fd.png",
-    "static/media/search.png": "/taratari-react/static/media/search.bbebd881.png"
+    "static/media/fashion.jpg": "/taratari-react/static/media/fashion.59e05e3a.jpg",
+    "static/media/furniture.jpg": "/taratari-react/static/media/furniture.58bd2668.jpg",
+    "static/media/hobbies.jpg": "/taratari-react/static/media/hobbies.a02bfaa5.jpg",
+    "static/media/house.jpg": "/taratari-react/static/media/house.2b941e03.jpg",
+    "static/media/job.jpg": "/taratari-react/static/media/job.17bb7686.jpg",
+    "static/media/main_image.jpeg": "/taratari-react/static/media/main_image.79341955.jpeg",
+    "static/media/mobile.jpg": "/taratari-react/static/media/mobile.80972488.jpg",
+    "static/media/others.jpg": "/taratari-react/static/media/others.5256f71f.jpg",
+    "static/media/pets.jpg": "/taratari-react/static/media/pets.d553bea5.jpg",
+    "static/media/search.png": "/taratari-react/static/media/search.bbebd881.png",
+    "static/media/service.jpg": "/taratari-react/static/media/service.c7a91822.jpg",
+    "static/media/television.jpg": "/taratari-react/static/media/television.2ecc07ea.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.106bdcfa.js",
-    "static/js/2.6bd42263.chunk.js",
-    "static/css/main.3cf342fe.chunk.css",
-    "static/js/main.4508e4a9.chunk.js"
+    "static/js/2.169229f2.chunk.js",
+    "static/css/main.30bd9448.chunk.css",
+    "static/js/main.c8b790a9.chunk.js"
   ]
 }
