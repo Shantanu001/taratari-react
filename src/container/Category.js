@@ -17,7 +17,7 @@ const Category = () => {
               {" "}
               <CardCategory
                 category="Cars"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="cars.png"
               />
             </Col>
             <Col>
@@ -31,14 +31,14 @@ const Category = () => {
               {" "}
               <CardCategory
                 category="Furniture"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="furniture.jpg"
               />
             </Col>
             <Col>
               {" "}
               <CardCategory
                 category="Jobs"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="job.jpg"
               />
             </Col>
           </Row>
@@ -47,28 +47,28 @@ const Category = () => {
               {" "}
               <CardCategory
                 category="Electronics&Appliances"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="television.jpg"
               />
             </Col>
             <Col>
               {" "}
               <CardCategory
                 category="Fashion"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="fashion.jpg"
               />
             </Col>
             <Col>
               {" "}
               <CardCategory
                 category="Mobiles"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="mobile.jpg"
               />
             </Col>
             <Col>
               {" "}
               <CardCategory
                 category="Services"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="service.jpg"
               />
             </Col>
           </Row>
@@ -76,29 +76,29 @@ const Category = () => {
             <Col>
               {" "}
               <CardCategory
-                category="Properties"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                category="Properties&Rent"
+                categoryUrl="house.jpg"
               />
             </Col>
             <Col>
               {" "}
               <CardCategory
                 category="Pets"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="pets.jpg"
               />
             </Col>
             <Col>
               {" "}
               <CardCategory
                 category="Books,Sports&Hobbies"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="hobbies.jpg"
               />
             </Col>
             <Col>
               {" "}
               <CardCategory
                 category="Others"
-                categoryUrl="bmw-57e3d44049_1280.jpg"
+                categoryUrl="others.jpg"
               />
             </Col>
           </Row>

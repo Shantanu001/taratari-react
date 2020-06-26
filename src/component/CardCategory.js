@@ -6,7 +6,7 @@ const CardCategory = (props) => {
   const history = useHistory();
   return (
     <Card onClick = {()=>{history.push('/form1')}} style={{ width: "16rem",margin:"5%" }}>
-      <Card.Img variant="top" src={require("../assets/bmw-57e3d44049_1280.jpg")} />
+      <Card.Img variant="top" src={require(`../assets/${props.categoryUrl}`)} />
       <Card.Body>
         <Card.Title>{props.category}</Card.Title>
       </Card.Body>  
