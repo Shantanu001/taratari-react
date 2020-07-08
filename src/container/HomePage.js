@@ -12,22 +12,40 @@ function HomePage (){
     const [title,setTitle] = useState("HomePage");
     const [location,setLocation] = useState("Bangalore");
     const [category,setCategory] = useState("Bikes");
+    
 
     return (
         <div className="container">
        <Container fluid>
            <Row><Header /></Row>
            <Row >
-                <Col xs={2} className='navbar' >
+                {/* <Col xs={2} className='navbar' >
                     <a>Home</a>
                     <p>{category} in {location}</p>
                 </Col>
                 <Col xs={{ span: 2, offset: 8 }}>
                     <Dropdown/>
+                </Col> */}
+                  <Col className='navbar' >
+                    <a>Home</a>
+                    <p>{category} in {location}</p>
                 </Col>
+                <Col>
+                    <Dropdown title="Select Category"/>
+                </Col>
+                <Col>
+                    <Dropdown title="Select location Range"/>
+                </Col>
+                <Col>
+                    <Dropdown title="Select Price Range"/>
+                </Col>
+                <Col>
+                    <Dropdown title="SortBy"/>
+                </Col>
+                
             </Row>
            <Row className = "explore"> 
-            <Col xs={2} className="filter-bar">
+            {/* <Col xs={2} className="filter-bar">
                     <Row className='fiter-tab'>
                         <div style={{fontSize:'x-large'}}>Filters</div>
                         <p>----------------------</p>
@@ -51,8 +69,8 @@ function HomePage (){
                         <span>Max</span>
                     </div>
                     </Row>
-            </Col>
-            <Col xs = {10}className="content-bar">  
+            </Col> */}
+            <Col className="content-bar">  
                 <Row>
                     {[0,1,2,3,4,5,6,7,8,9,10].map(obj=>(
                         <Col xs={4}> <div className="card-item"> </div>  <Card/></Col>

@@ -3,12 +3,12 @@ import {Dropdown} from 'react-bootstrap';
 //import {useHistory}  from "react-router-dom";
 import './header.scss';
 
-const dropdown = ()=>{
+const dropdown = (props)=>{
         return (
         
                         <Dropdown>
                             <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                Select Items
+                                {props.title}
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
                                 <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
