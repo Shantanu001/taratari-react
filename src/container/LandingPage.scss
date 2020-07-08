@@ -5,7 +5,15 @@
     background-color: #1F3349;
 }
 .right-sidebar {
-    background-color: #E5ED98;
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding:10%;
+}
+.left-sidebar {
+    padding:10%;
+    height: 80vh;
 }
 .logo {
     font-size: 35px;
@@ -18,10 +26,9 @@
     background: #F18362;
     color: white;
     font-family: fantasy;
-    margin: 50px 25px;
-    padding: 2px 30px;
+    padding: 10px 30px;
     border-inline-end-style: aqua;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     border-radius: 8%;
     /* border-color: black; */
@@ -46,5 +53,7 @@
     font-size: 6vh;
     font-family: fantasy;
     margin: 10vh 2vh;
+    margin-right: -15px;
+    margin-left: -15px;
 
 }

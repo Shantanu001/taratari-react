@@ -9,19 +9,31 @@
     color: white;
     font-family: fantasy;
     margin: 10px 40px;
+    display: flex;
+    justify-content: flex-start;
 }
 .sell-button{
     text-align: center;
     background: #F18362;
     color: white;
     font-family: fantasy;
-    margin: 50px 25px;
-    padding: 2px 30px;
+    padding: 13px 36px;
     border-inline-end-style: aqua;
     font-size: 25px;
     text-decoration: none;
     border-radius: 8%;
+    margin: 2%;
     /* border-color: black; */
-    border: 2px solid black
+    border: 2px solid black;
+}
+
+.header-col-logo {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.header-col-button {
+    display:flex;
+    justify-content: flex-end;
 }
 

@@ -7,10 +7,10 @@ const header = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const history = useHistory();
   return (
-    <Container fluid>
+    <Container >
       <Row className={"header"}>
-        <Col className={"logo"}>TaraTari</Col>
-        <Col className>
+        <Col className={"logo header-col-logo"}>TaraTari</Col>
+        {/* <Col className>
           <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic">
               Select Items
@@ -40,8 +40,8 @@ const header = () => {
             alt=""
             src={require("../assets/search.png")}
           />
-        </Col>
-        <Col>
+        </Col> */}
+        <Col className={"header-col-button"}>
           <Button
             onClick={() => {
               history.push("/Category");
