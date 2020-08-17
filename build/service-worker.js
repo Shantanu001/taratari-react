@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/taratari-react/precache-manifest.a32ad8a96e17882f217be8f63d8b2a21.js"
+  "/taratari-react/precache-manifest.479c82907a7bcabfb8417677c5b1bb68.js"
 );
 
 self.addEventListener('message', (event) => {
