@@ -9,23 +9,25 @@ const Form3 = () => {
   return (
     <div className="container">
       <Container fluid>
-        <Row>
+        {/* <Row>
           <Header />
-        </Row>
+        </Row> */}
         <Row className="content">
-          <h3 className="heading">Set a Price</h3>
+          {/* <h3 className="heading">Set a Price</h3> */}
           <hr/>
           <Row className="price-container">
-          <Form>
-            <Form.Control size="lg" type="text" placeholder="Large text" />
+          <Col md={{ span: 4, offset: 4 }}>
+          <Form className = "setPriceForm">
+            <Form.Control size="lg" type="input" placeholder="Enter Price" />
           </Form>
           <Button
             onClick={() => {
-              history.push("/form3");
+              history.push("/sellerForm");
             }}
           >
             Save&Continue
           </Button>
+          </Col>
         </Row>
         </Row>
       </Container>

@@ -53,7 +53,7 @@ const LandingPage = ()=>{
                         <Image className={"left-sidebar"}  src={require("../assets/online-store-57e6d24743_1280.png")} fluid/>
                     </Col>
                     <Col  lg={true} className = {"right-sidebar"}>
-                        <Row className = {"heading"} >Why TaraTari?</Row>
+                        <Row className = {"heading"}>Why TaraTari?</Row>
                         <Row><p>INSTANT SELL & BUY ANY ITEM</p></Row>
                         <Row> <p>FREE LISTING</p></Row>
                         <Row> <p>QUICK RESPONSE FROM GENUINE BUYERS AND SELLERS</p></Row>

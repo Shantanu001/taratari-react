@@ -1,17 +1,56 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Header from "../component/header";
 import Dropdown from "../component/dropdown";
 import Card from "../component/card";
 import {Container,Row,Col,Image,Button} from 'react-bootstrap';
 import './HomePage.scss';
+import Axios from 'axios';
 // import Dropdown from 'react-dropdown';
 // import 'react-dropdown/style.css';
 
 function HomePage (){
 
     const [title,setTitle] = useState("HomePage");
-    const [location,setLocation] = useState("Bangalore");
+    const [location,setLocation] = useState("");
     const [category,setCategory] = useState("Bikes");
+    const [isOpen,setOpen] = useState(false);
+
+    let setDropdown = (e,val)=>{
+        setOpen(val);
+        console.log(val);
+    }
+    let getLocationFunction = ()=>{
+        navigator.geolocation.getCurrentPosition((position) => {
+            console.log(position.coords.latitude, position.coords.longitude);
+            let options = {
+                params:{
+                "lat":position.coords.latitude,
+                "lon":position.coords.longitude
+                }
+            }
+            Axios.get('http://localhost:8080/getLocation',options)
+            .then(function(response){
+                console.log(response);
+                setLocation(response.data[0].city);
+            }).catch(function(err){
+                throw err;
+            })
+          });
+
+    };
+
+    useEffect(()=>{
+        getLocationFunction();       
+    },[]);
+
+    // let getProductList = ()=>{
+
+    // };
+
+
+    // useEffect()=>{
+
+    // };
     
 
     return (
@@ -31,7 +70,11 @@ function HomePage (){
                     <p>{category} in {location}</p>
                 </Col>
                 <Col>
-                    <Dropdown title="Select Category"/>
+                    <Dropdown 
+                    onMouseEnter = { (e)=>setOpen(true) }
+                    onMouseLeave = { (e)=>setOpen(false)}
+                    show={isOpen}
+                    title="Select Category"/>
                 </Col>
                 <Col>
                     <Dropdown title="Select location Range"/>

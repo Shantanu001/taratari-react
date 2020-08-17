@@ -7,45 +7,47 @@ import CardCategory from "../component/CardCategory";
 const Form1 = () => {
     let history = useHistory();
   return (
-    <div className="container">
+    <div className="form1">
       <Container fluid>
-        <Row>
+        {/* <Row>
           <Header />
-        </Row>
+        </Row> */}
         <Row className="content">
-          <h3>Enter Product Detail</h3>
-          <hr/>
+          {/* <h3>Enter Product Detail</h3>
+          <hr/> */}
+          <Col md={{ span: 6, offset: 3 }}>
           <Form>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Product Name</Form.Label>
+              {/* <Form.Label>Product Name</Form.Label> */}
               <Form.Control
                 type="input"
                 placeholder="Enter the product name here"
               />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Brand</Form.Label>
+              {/* <Form.Label>Brand</Form.Label> */}
               <Form.Control
                 type="input"
                 placeholder="Enter the brand name here"
               />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>How old?</Form.Label>
+              {/* <Form.Label>How old?</Form.Label> */}
               <Form.Control
                 type="input"
                 placeholder="How old the product is?"
               />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Description</Form.Label>
+              {/* <Form.Label>Description</Form.Label> */}
               <Form.Control
                 type="input"
                 placeholder="Write the description about the product"
               />
             </Form.Group>
           </Form>
-          <Button onClick = {()=>{history.push('/form2')}} >Save&Continue</Button>
+          <Button onClick = {()=>{history.push('/sellerForm/2')}} >Save&Continue</Button>
+          </Col>
         </Row>
       </Container>
     </div>
