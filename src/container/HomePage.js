@@ -5,6 +5,8 @@ import Card from "../component/card";
 import {Container,Row,Col,Image,Button} from 'react-bootstrap';
 import './HomePage.scss';
 import Axios from 'axios';
+
+
 // import Dropdown from 'react-dropdown';
 // import 'react-dropdown/style.css';
 
@@ -14,6 +16,7 @@ function HomePage (){
     const [location,setLocation] = useState("");
     const [category,setCategory] = useState("Bikes");
     const [isOpen,setOpen] = useState(false);
+    const [categoryList,getCategoryList] = useState();
 
     let setDropdown = (e,val)=>{
         setOpen(val);
@@ -28,36 +31,40 @@ function HomePage (){
                 "lon":position.coords.longitude
                 }
             }
-            Axios.get('http://localhost:8080/getLocation',options)
+            let url = process.env.REACT_APP_BASE_URL+"/getLocation";
+            console.log(url);
+            Axios.get(url,options)
             .then(function(response){
                 console.log(response);
-                setLocation(response.data[0].city);
+                setLocation(response.data[0].city?response.data[0].city:response.data[0].state);
             }).catch(function(err){
                 throw err;
             })
           });
 
     };
+    let getCategory = ()=>{
+        let url = process.env.REACT_APP_BASE_URL + "/getCategoryList";
+        Axios.get(url)
+        .then(function(response){
+            console.log(response.data.data);
+            getCategoryList(response.data.data);
+
+        }).catch(function(err){
+                throw err;
+        })
+    }
 
     useEffect(()=>{
+        getCategory();
         getLocationFunction();       
     },[]);
-
-    // let getProductList = ()=>{
-
-    // };
-
-
-    // useEffect()=>{
-
-    // };
-    
 
     return (
         <div className="container">
        <Container fluid>
            <Row><Header /></Row>
-           <Row >
+           <Row className = "nav">
                 {/* <Col xs={2} className='navbar' >
                     <a>Home</a>
                     <p>{category} in {location}</p>
@@ -65,25 +72,32 @@ function HomePage (){
                 <Col xs={{ span: 2, offset: 8 }}>
                     <Dropdown/>
                 </Col> */}
-                  <Col className='navbar' >
+                  <Col sm={true} className='navbar' >
                     <a>Home</a>
-                    <p>{category} in {location}</p>
+                    <p><strong>{category} in {location}</strong></p>
                 </Col>
-                <Col>
+                <Col sm={true}>
                     <Dropdown 
                     onMouseEnter = { (e)=>setOpen(true) }
                     onMouseLeave = { (e)=>setOpen(false)}
                     show={isOpen}
+                    list = {categoryList}
                     title="Select Category"/>
                 </Col>
-                <Col>
+                {/* <Col>
                     <Dropdown title="Select location Range"/>
+                </Col> */}
+                {/* <Col>
+                    <Dropdown title="Select Minimum Price Range"/>
                 </Col>
                 <Col>
-                    <Dropdown title="Select Price Range"/>
-                </Col>
-                <Col>
-                    <Dropdown title="SortBy"/>
+                    <Dropdown title="Select Maximum Price Range"/>
+                </Col> */}
+                <Col sm={true}>
+                    <Dropdown 
+                    title="SortBy"
+                    list = {["High to Low","Low to High"]}
+                    />
                 </Col>
                 
             </Row>
@@ -113,10 +127,10 @@ function HomePage (){
                     </div>
                     </Row>
             </Col> */}
-            <Col className="content-bar">  
+            <Col sm={true} className="content-bar">  
                 <Row>
                     {[0,1,2,3,4,5,6,7,8,9,10].map(obj=>(
-                        <Col xs={4}> <div className="card-item"> </div>  <Card/></Col>
+                        <Col sm={4}> <div className="card-item"> </div>  <Card/></Col>
                     ))}
                 </Row>            
             </Col>

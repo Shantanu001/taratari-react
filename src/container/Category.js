@@ -13,28 +13,28 @@ const Category = () => {
         </Row>
         <Row className="category-container">
           <Row>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Cars"
                 categoryUrl="cars.png"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Bikes"
                 categoryUrl="bmw-57e3d44049_1280.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Furniture"
                 categoryUrl="furniture.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Jobs"
@@ -43,28 +43,28 @@ const Category = () => {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Electronics&Appliances"
                 categoryUrl="television.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Fashion"
                 categoryUrl="fashion.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Mobiles"
                 categoryUrl="mobile.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Services"
@@ -73,28 +73,28 @@ const Category = () => {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Properties&Rent"
                 categoryUrl="house.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Pets"
                 categoryUrl="pets.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Books,Sports&Hobbies"
                 categoryUrl="hobbies.jpg"
               />
             </Col>
-            <Col>
+            <Col sm={true}>
               {" "}
               <CardCategory
                 category="Others"

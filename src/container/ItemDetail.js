@@ -12,7 +12,7 @@ const ItemDetail = () => {
           <Header />
         </Row>
         <Row className="content-layout">
-          <Col xs={8}>
+          <Col sm={8} lg={true}>
             <Row className="Image">
               <Image
                 className="content"
@@ -21,13 +21,14 @@ const ItemDetail = () => {
             </Row>
             <Row className="Description">
               <h3>Description</h3>
-              <h4>
+              <p>
                 Sample description about the item.Sample description about the
                 item.Sample description about the item.
-              </h4>
+              </p>
             </Row>
           </Col>
-          <Col className="detail-container" xs={4}>
+          {/* <Col md="auto"></Col> */}
+          <Col sm={4}  className="detail-container" >
             <Row className="Item-detail">
               <p className="upload-date">3 days ago</p>
               <p className="price">Rs.45000</p>

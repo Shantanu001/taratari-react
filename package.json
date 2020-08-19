@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "geocoder": "^0.2.3",
     "node": "^8.17.0",
     "node-geocoder": "^3.27.0",

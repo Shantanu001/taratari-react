@@ -6,13 +6,13 @@
 }
 
 .filter-bar .heading {
-    font-family: fantasy;
+    font-family: serif;
     font-size: 3vh;;
     margin: 0px;
 }
 
 .filter-bar .filter {
-    font-family: fantasy;
+    font-family: serif;
     font-size: 3vh;;
 }
 .filter-bar .fiter-tab {
@@ -46,4 +46,7 @@
 .navbar{
     display: flex;
     flex-direction: column;
+}
+.nav{
+    margin: 0.5%;
 }

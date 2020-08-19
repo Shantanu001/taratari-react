@@ -5,6 +5,7 @@ import './header.scss';
 
  function Dropdowns(props){
     const [isOpen,setOpen] = useState(false);
+    console.log("here",props.list);
 
         return (
         
@@ -15,9 +16,12 @@ import './header.scss';
                                 {props.title}
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                {props.list&&props.list.map(obj=>(
+                                    <Dropdown.Item href="#/action-1">{obj}</Dropdown.Item>
+                                ))}
+                                
+                                {/* <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item> */}
                             </Dropdown.Menu>
                         </Dropdown>
     );

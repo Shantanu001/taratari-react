@@ -54,9 +54,9 @@ const LandingPage = ()=>{
                     </Col>
                     <Col  lg={true} className = {"right-sidebar"}>
                         <Row className = {"heading"}>Why TaraTari?</Row>
-                        <Row><p>INSTANT SELL & BUY ANY ITEM</p></Row>
-                        <Row> <p>FREE LISTING</p></Row>
-                        <Row> <p>QUICK RESPONSE FROM GENUINE BUYERS AND SELLERS</p></Row>
+                        <Row><p>&#9989;  &nbsp; INSTANT SELL & BUY ANY ITEM</p></Row>
+                        <Row><p>&#9989;  &nbsp; FREE LISTING</p></Row>
+                        <Row sm={true}><p>&#9989;  &nbsp; QUICK RESPONSE FROM GENUINE BUYERS AND SELLERS</p></Row>
                         <Row ><Button onClick = {()=>{history.push('/home')}} className={"explore-button"} >EXPLORE</Button></Row>
                     </Col>
                 </Row>   

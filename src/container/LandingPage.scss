@@ -9,7 +9,8 @@
     height: 80vh;
     display: flex;
     flex-direction: column;
-    padding:10%;
+    justify-items: center;
+    margin-top: 5%;
 }
 .left-sidebar {
     padding:10%;
@@ -18,14 +19,14 @@
 .logo {
     font-size: 35px;
     color: white;
-    font-family: fantasy;
+    font-family: serif;
     margin: 10px 40px;
 }
 .sell-button{
     text-align: center;
     background: #F18362;
     color: white;
-    font-family: fantasy;
+    font-family: serif;
     padding: 10px 30px;
     border-inline-end-style: aqua;
     font-size: 20px;
@@ -42,7 +43,7 @@
     padding: 1.5vh 8vh;
     display: flex;
     font-size: 2vh;
-    font-family: fantasy;
+    font-family: serif;
     border: 0.3vh solid black;
     border-radius: 5%;
     margin: 10vh 5vh;
@@ -51,7 +52,7 @@
 
 .heading{
     font-size: 6vh;
-    font-family: fantasy;
+    font-family: serif;
     margin: 10vh 2vh;
     margin-right: -15px;
     margin-left: -15px;
