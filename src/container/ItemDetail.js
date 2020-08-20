@@ -1,10 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Button, Dropdown } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import Header from "../component/header";
 import "./ItemDetail.scss";
+import Axios from 'axios';
+
 const ItemDetail = () => {
   let history = useHistory();
+  let {_id} = useParams();
+  console.log("here",useParams());
+  const [product,getProduct] = useState("");
+
+  let getProductListById = ()=>{
+    let url = process.env.REACT_APP_BASE_URL + `/getProductListById?_id=${_id}`;
+    Axios.get(url)
+    .then(function(response){
+        console.log("121",response.data);
+        getProduct(response.data);
+
+    }).catch(function(err){
+            throw err;
+    })
+};
+
+useEffect(()=>{
+  getProductListById();       
+},[]);
+
+
   return (
     <div className="container">
       <Container fluid>
@@ -16,26 +39,24 @@ const ItemDetail = () => {
             <Row className="Image">
               <Image
                 className="content"
-                src={require("../assets/ecommerce2-1.png")}
+                src={product.Image}
               />
             </Row>
             <Row className="Description">
-              <h3>Description</h3>
+              <h3>{product.Name}</h3>
               <p>
-                Sample description about the item.Sample description about the
-                item.Sample description about the item.
+               {product.Description}
               </p>
             </Row>
           </Col>
           {/* <Col md="auto"></Col> */}
           <Col sm={4}  className="detail-container" >
             <Row className="Item-detail">
-              <p className="upload-date">3 days ago</p>
-              <p className="price">Rs.45000</p>
+              <p className="upload-date">{product.how_old} old</p>
+              <p className="price">Rs.{product.Price}</p>
               <div className="model-details">
-                <p>Model Name</p>
-                <p>Brand</p>
-                <p>Used fro 2 years</p>
+                <p>{product.Name}</p>
+                <p>{product.Brand}</p>
               </div>
             </Row>
             <Row className="Seller">

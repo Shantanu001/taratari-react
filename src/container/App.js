@@ -15,9 +15,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path='/taratari-react' component={LandingPage} />
+          <Route exact path='/taratari-react' component={HomePage} />
           <Route path='/home' component={HomePage}/>
-          <Route path='/ItemDetail' component={ItemDetail}/>
+          <Route path='/ItemDetail/:_id' component={ItemDetail}/>
           <Route path='/Category' component={Category}/>
           <Route path='/form1' component={Form1}/>
           <Route path='/form2' component={Form2}/>

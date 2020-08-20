@@ -4,6 +4,7 @@ import {Container,Row,Col,Image,Button,Dropdown} from 'react-bootstrap';
 import {useHistory}  from "react-router-dom";
 import Header from "../component/header";
 import './LandingPage.scss';
+import backgroundImage from "../assets/mobile.jpg";
 
 const LandingPage = ()=>{
     let options = {
@@ -48,7 +49,7 @@ const LandingPage = ()=>{
         return (
            <Container fluid>
                <Header/>
-                <Row>
+                <Row className="main">
                     <Col lg={true} >
                         <Image className={"left-sidebar"}  src={require("../assets/online-store-57e6d24743_1280.png")} fluid/>
                     </Col>

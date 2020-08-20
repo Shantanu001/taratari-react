@@ -17,6 +17,8 @@ function HomePage (){
     const [category,setCategory] = useState("Bikes");
     const [isOpen,setOpen] = useState(false);
     const [categoryList,getCategoryList] = useState();
+    const [productList,getProductList] = useState("");
+
 
     let setDropdown = (e,val)=>{
         setOpen(val);
@@ -47,8 +49,19 @@ function HomePage (){
         let url = process.env.REACT_APP_BASE_URL + "/getCategoryList";
         Axios.get(url)
         .then(function(response){
-            console.log(response.data.data);
+            console.log("here",response.data.data);
             getCategoryList(response.data.data);
+
+        }).catch(function(err){
+                throw err;
+        })
+    }
+    let getProductLists = ()=>{
+        let url = process.env.REACT_APP_BASE_URL + "/getProductList";
+        Axios.get(url)
+        .then(function(response){
+            console.log("121",response.data);
+            getProductList(response.data);
 
         }).catch(function(err){
                 throw err;
@@ -56,6 +69,7 @@ function HomePage (){
     }
 
     useEffect(()=>{
+        getProductLists();
         getCategory();
         getLocationFunction();       
     },[]);
@@ -129,8 +143,8 @@ function HomePage (){
             </Col> */}
             <Col sm={true} className="content-bar">  
                 <Row>
-                    {[0,1,2,3,4,5,6,7,8,9,10].map(obj=>(
-                        <Col sm={4}> <div className="card-item"> </div>  <Card/></Col>
+                    {productList&&productList.map(obj=>(
+                        <Col sm={4}> <div className="card-item"> </div>  <Card title={obj.Name} price={obj.Price} image={obj.Image} id={obj._id}/></Col>
                     ))}
                 </Row>            
             </Col>
