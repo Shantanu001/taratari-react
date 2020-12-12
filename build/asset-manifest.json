@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/taratari-react/static/css/main.17b56c3b.chunk.css",
-    "main.js": "/taratari-react/static/js/main.6427ae87.chunk.js",
-    "main.js.map": "/taratari-react/static/js/main.6427ae87.chunk.js.map",
+    "main.js": "/taratari-react/static/js/main.7e881334.chunk.js",
+    "main.js.map": "/taratari-react/static/js/main.7e881334.chunk.js.map",
     "runtime-main.js": "/taratari-react/static/js/runtime-main.106bdcfa.js",
     "runtime-main.js.map": "/taratari-react/static/js/runtime-main.106bdcfa.js.map",
     "static/css/2.2ce93ba3.chunk.css": "/taratari-react/static/css/2.2ce93ba3.chunk.css",
-    "static/js/2.6de46a87.chunk.js": "/taratari-react/static/js/2.6de46a87.chunk.js",
-    "static/js/2.6de46a87.chunk.js.map": "/taratari-react/static/js/2.6de46a87.chunk.js.map",
+    "static/js/2.c4307363.chunk.js": "/taratari-react/static/js/2.c4307363.chunk.js",
+    "static/js/2.c4307363.chunk.js.map": "/taratari-react/static/js/2.c4307363.chunk.js.map",
     "index.html": "/taratari-react/index.html",
-    "precache-manifest.b192fff0e9c384c43dce8cfd7268e05c.js": "/taratari-react/precache-manifest.b192fff0e9c384c43dce8cfd7268e05c.js",
+    "precache-manifest.874a461bda8ae997bde05f2ef70db6d9.js": "/taratari-react/precache-manifest.874a461bda8ae997bde05f2ef70db6d9.js",
     "service-worker.js": "/taratari-react/service-worker.js",
     "static/css/2.2ce93ba3.chunk.css.map": "/taratari-react/static/css/2.2ce93ba3.chunk.css.map",
     "static/css/main.17b56c3b.chunk.css.map": "/taratari-react/static/css/main.17b56c3b.chunk.css.map",
-    "static/js/2.6de46a87.chunk.js.LICENSE.txt": "/taratari-react/static/js/2.6de46a87.chunk.js.LICENSE.txt",
+    "static/js/2.c4307363.chunk.js.LICENSE.txt": "/taratari-react/static/js/2.c4307363.chunk.js.LICENSE.txt",
     "static/media/Screen Shot 2020-05-28 at 5.50.34 PM.png": "/taratari-react/static/media/Screen Shot 2020-05-28 at 5.50.34 PM.4e54b84c.png",
     "static/media/UploadIcon.svg": "/taratari-react/static/media/UploadIcon.1cedb6e9.svg",
     "static/media/bmw-57e3d44049_1280.jpg": "/taratari-react/static/media/bmw-57e3d44049_1280.672b5635.jpg",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.106bdcfa.js",
     "static/css/2.2ce93ba3.chunk.css",
-    "static/js/2.6de46a87.chunk.js",
+    "static/js/2.c4307363.chunk.js",
     "static/css/main.17b56c3b.chunk.css",
-    "static/js/main.6427ae87.chunk.js"
+    "static/js/main.7e881334.chunk.js"
   ]
 }
