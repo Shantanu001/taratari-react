@@ -23,7 +23,7 @@ const Form2 = () => {
         imgExtension={['.jpeg','.jpg', '.gif', '.png', '.gif']}
         maxFileSize={5242880}
     />
-    <Button onClick = {()=>{history.push('/sellerForm/3')}} >Save&Continue</Button>
+    {/* <Button onClick = {()=>{history.push('/sellerForm/3')}} >Save&Continue</Button> */}
     </div>
 );
 };
