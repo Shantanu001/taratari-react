@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65b8bdab3181844845ebcc15ea2ff0c6",
+    "revision": "8a8373f33c8231e6210029b07e1044a1",
     "url": "/Shantanu001/taratari-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shantanu001/taratari-react/static/css/2.2ce93ba3.chunk.css"
   },
   {
-    "revision": "bd99a996e00cd9431ec5",
+    "revision": "b7d24ab0bf42f8195b2b",
     "url": "/Shantanu001/taratari-react/static/css/main.17b56c3b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shantanu001/taratari-react/static/js/2.3b8cf522.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd99a996e00cd9431ec5",
-    "url": "/Shantanu001/taratari-react/static/js/main.6427ae87.chunk.js"
+    "revision": "b7d24ab0bf42f8195b2b",
+    "url": "/Shantanu001/taratari-react/static/js/main.ee9c4d48.chunk.js"
   },
   {
     "revision": "673742dc76b92c77e6b8",
