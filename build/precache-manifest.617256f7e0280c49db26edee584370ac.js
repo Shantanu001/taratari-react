@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc6b4c24e7b29468f6cbc3dc307178d4",
+    "revision": "e7a11190ebb61b9bbbc0dd5113481a6d",
     "url": "/taratari-react/index.html"
   },
   {
