@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/taratari-react/static/css/main.e0b1ea24.chunk.css",
-    "main.js": "/taratari-react/static/js/main.4d1d8a5f.chunk.js",
-    "main.js.map": "/taratari-react/static/js/main.4d1d8a5f.chunk.js.map",
+    "main.js": "/taratari-react/static/js/main.b7612ba3.chunk.js",
+    "main.js.map": "/taratari-react/static/js/main.b7612ba3.chunk.js.map",
     "runtime-main.js": "/taratari-react/static/js/runtime-main.dd41cb7c.js",
     "runtime-main.js.map": "/taratari-react/static/js/runtime-main.dd41cb7c.js.map",
     "static/css/2.2ce93ba3.chunk.css": "/taratari-react/static/css/2.2ce93ba3.chunk.css",
     "static/js/2.a0615fed.chunk.js": "/taratari-react/static/js/2.a0615fed.chunk.js",
     "static/js/2.a0615fed.chunk.js.map": "/taratari-react/static/js/2.a0615fed.chunk.js.map",
     "index.html": "/taratari-react/index.html",
-    "precache-manifest.617256f7e0280c49db26edee584370ac.js": "/taratari-react/precache-manifest.617256f7e0280c49db26edee584370ac.js",
+    "precache-manifest.a5624a637a6decd2668782420c8a7f91.js": "/taratari-react/precache-manifest.a5624a637a6decd2668782420c8a7f91.js",
     "service-worker.js": "/taratari-react/service-worker.js",
     "static/css/2.2ce93ba3.chunk.css.map": "/taratari-react/static/css/2.2ce93ba3.chunk.css.map",
     "static/css/main.e0b1ea24.chunk.css.map": "/taratari-react/static/css/main.e0b1ea24.chunk.css.map",
@@ -39,6 +39,6 @@
     "static/css/2.2ce93ba3.chunk.css",
     "static/js/2.a0615fed.chunk.js",
     "static/css/main.e0b1ea24.chunk.css",
-    "static/js/main.4d1d8a5f.chunk.js"
+    "static/js/main.b7612ba3.chunk.js"
   ]
 }

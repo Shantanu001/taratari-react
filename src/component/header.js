@@ -9,7 +9,7 @@ const header = () => {
   return (
     <Container >
       <Row className={"header"}>
-        <a href="/home"><Col className={"logo header-col-logo"} >TaraTari</Col></a>
+        <a href="/home"><Col className={"logo header-col-logo"} >IdharDekho</Col></a>
         {/* <Col className>
           <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic">
