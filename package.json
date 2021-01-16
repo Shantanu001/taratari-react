@@ -4,12 +4,15 @@
   "homepage": "https://Shantanu001.github.io/taratari-react",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "geocoder": "^0.2.3",
+    "material-ui-dropzone": "^3.5.0",
     "node": "^8.17.0",
     "node-geocoder": "^3.27.0",
     "node-sass": "^4.14.1",
@@ -17,9 +20,11 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-images-upload": "^1.2.8",
+    "react-multiple-image-uploader": "^1.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "reactjs-file-uploader": "^1.0.8"
+    "reactjs-file-uploader": "^1.0.8",
+    "sweetalert2": "^10.13.0"
   },
   "scripts": {
     "predeploy": "npm run build",

@@ -4,6 +4,17 @@ import { useHistory } from "react-router-dom";
 import Header from "../component/header";
 import './Form1.scss';
 import CardCategory from "../component/CardCategory";
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
+}));
 const Form1 = () => {
     let history = useHistory();
   return (
@@ -46,7 +57,7 @@ const Form1 = () => {
               />
             </Form.Group>
           </Form>
-          <Button onClick = {()=>{history.push('/sellerForm/2')}} >Save&Continue</Button>
+          {/* <Button onClick = {()=>{history.push('/sellerForm/2')}} >Save&Continue</Button> */}
           </Col>
         </Row>
       </Container>

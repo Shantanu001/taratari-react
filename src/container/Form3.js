@@ -20,13 +20,13 @@ const Form3 = () => {
           <Form className = "setPriceForm">
             <Form.Control size="lg" type="input" placeholder="Enter Price" />
           </Form>
-          <Button
+          {/* <Button
             onClick={() => {
               history.push("/sellerForm");
             }}
           >
             Save&Continue
-          </Button>
+          </Button> */}
           </Col>
         </Row>
         </Row>

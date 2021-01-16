@@ -9,6 +9,7 @@ import Form1 from './Form1';
 import Form2 from './Form2'; 
 import Form3 from './Form3'; 
 import SellerForm from './SellerForm';
+import HorizontalLabelPositionBelowStepper from './StepperForm';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path='/form1' component={Form1}/>
           <Route path='/form2' component={Form2}/>
           <Route path='/form3' component={Form3}/>
-          <Route path='/SellerForm/:form' component={SellerForm} />
+          <Route path='/SellerForm/:form' component={HorizontalLabelPositionBelowStepper} />
         </Switch>
       </Router>
     </div>

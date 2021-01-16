@@ -1,31 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
-import Header from "../component/header";
-import ImageUploader from 'react-images-upload';
-import "./Form1.scss";
-import dropdown from "../component/dropdown";
-const Form2 = () => {
-  let history = useHistory();
-  const [pictures,setPicture] = useState([]); 
-  let onDrop = (picture) =>{
-    // this.setState({
-    //     pictures: this.state.pictures.concat(picture),
-    // });
-    setPicture(picture);
+import React, {Component} from 'react'
+import {DropzoneArea} from 'material-ui-dropzone'
+ 
+export default class Form2 extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      files: []
+    };
+  }
+  handleChange(files){
+    this.setState({
+      files: files
+    });
+  }
+  render(){
+    return (
+      <div>
+      <DropzoneArea style={{border:"none"}}
+        onChange={this.handleChange.bind(this)}
+        />
+      </div>
+    )
+  }
 }
-  return (
-    <div>
-    <ImageUploader  
-        withIcon={true}
-        buttonText='Choose images'
-        onChange={onDrop}
-        imgExtension={['.jpeg','.jpg', '.gif', '.png', '.gif']}
-        maxFileSize={5242880}
-    />
-    <Button onClick = {()=>{history.push('/sellerForm/3')}} >Save&Continue</Button>
-    </div>
-);
-};
-
-export default Form2;
