@@ -9,7 +9,12 @@ const header = () => {
   return (
     <Container >
       <Row className={"header"}>
-        <a href="/home"><Col className={"logo header-col-logo"} >IdharDekho</Col></a>
+        <a href="/home"><Col className={"logo header-col-logo"} > <Image
+               style={{
+                 width: "50"
+               }}
+                src={require("../assets/logo.ico")}
+              /></Col></a>
         {/* <Col className>
           <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic">

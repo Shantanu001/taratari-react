@@ -5,6 +5,7 @@ import Card from "../component/card";
 import {Container,Row,Col,Image,Button} from 'react-bootstrap';
 import './HomePage.scss';
 import Axios from 'axios';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 // import Dropdown from 'react-dropdown';
@@ -18,6 +19,7 @@ function HomePage (){
     const [isOpen,setOpen] = useState(false);
     const [categoryList,getCategoryList] = useState();
     const [productList,getProductList] = useState("");
+    const [showLoader,setLoaderActive] = useState(true);
 
 
     let setDropdown = (e,val)=>{
@@ -47,7 +49,7 @@ function HomePage (){
     };
     let getCategory = ()=>{
         let url = process.env.REACT_APP_BASE_URL + "/getCategoryList";
-        Axios.get(url)
+        Axios.get(url,{headers: {"Access-Control-Allow-Origin": "*"}})
         .then(function(response){
             console.log("here",response.data.data);
             getCategoryList(response.data.data);
@@ -58,10 +60,11 @@ function HomePage (){
     }
     let getProductLists = ()=>{
         let url = process.env.REACT_APP_BASE_URL + "/getProductList";
-        Axios.get(url)
+        Axios.get(url,{headers: {"Access-Control-Allow-Origin": "*"}})
         .then(function(response){
             console.log("121",response.data);
             getProductList(response.data);
+            setLoaderActive(false);
 
         }).catch(function(err){
                 throw err;
@@ -115,6 +118,9 @@ function HomePage (){
                 </Col>
                 
             </Row>
+            {showLoader?( <CircularProgress/>):
+            (
+            <div>
            <Row className = "explore"> 
             {/* <Col xs={2} className="filter-bar">
                     <Row className='fiter-tab'>
@@ -144,11 +150,13 @@ function HomePage (){
             <Col sm={true} className="content-bar">  
                 <Row>
                     {productList&&productList.map(obj=>(
-                        <Col sm={4}> <div className="card-item"> </div>  <Card title={obj.Name} price={obj.Price} image={obj.Image} id={obj._id}/></Col>
+                        <Col sm={4}> <div className="card-item"> </div>  <Card title={obj.Name} price={obj.Price} image={`data:image/png;base64,${obj.Image}`} id={obj._id}/></Col>
                     ))}
                 </Row>            
             </Col>
             </Row>
+            </div>
+        )}
        </Container>
        </div>
 

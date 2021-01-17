@@ -22,7 +22,6 @@
     font-size: 25px;
     text-decoration: none;
     border-radius: 8%;
-    margin: 2%;
     /* border-color: black; */
     border: 2px solid black;
 }
@@ -30,10 +29,16 @@
 .header-col-logo {
     display:flex;
     justify-content: flex-start;
+    width: 30%;
+    margin-top: -4%;
+    margin-bottom: -1%;
+
 }
 
 .header-col-button {
     display:flex;
     justify-content: flex-end;
+    margin: 2%;
+
 }
 

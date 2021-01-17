@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import Header from "../component/header";
 import "./Form3.scss";
 import dropdown from "../component/dropdown";
-const Form3 = () => {
+const Form3 = (props) => {
   let history = useHistory();
   return (
     <div className="container">
@@ -14,21 +14,27 @@ const Form3 = () => {
         </Row> */}
         <Row className="content">
           {/* <h3 className="heading">Set a Price</h3> */}
-          <hr/>
+          <hr />
           <Row className="price-container">
-          <Col md={{ span: 4, offset: 4 }}>
-          <Form className = "setPriceForm">
-            <Form.Control size="lg" type="input" placeholder="Enter Price" />
-          </Form>
-          {/* <Button
+            <Col md={{ span: 4, offset: 4 }}>
+              <Form className="setPriceForm">
+                <Form.Control
+                  size="lg"
+                  type="input"
+                  placeholder="Enter Price"
+                  name="Price"
+                  onChange={(e) => props.onChange(e)}
+                />
+              </Form>
+              {/* <Button
             onClick={() => {
               history.push("/sellerForm");
             }}
           >
             Save&Continue
           </Button> */}
-          </Col>
-        </Row>
+            </Col>
+          </Row>
         </Row>
       </Container>
     </div>

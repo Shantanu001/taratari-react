@@ -4,19 +4,25 @@ import { useHistory, useParams } from "react-router-dom";
 import Header from "../component/header";
 import "./ItemDetail.scss";
 import Axios from 'axios';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 
 const ItemDetail = () => {
   let history = useHistory();
   let {_id} = useParams();
   console.log("here",useParams());
   const [product,getProduct] = useState("");
+  const [showLoader,setLoaderActive] = useState(true);
+
 
   let getProductListById = ()=>{
     let url = process.env.REACT_APP_BASE_URL + `/getProductListById?_id=${_id}`;
-    Axios.get(url)
+    Axios.get(url,{headers: {"Access-Control-Allow-Origin": "*"}}
+    )
     .then(function(response){
         console.log("121",response.data);
         getProduct(response.data);
+        setLoaderActive(false);
 
     }).catch(function(err){
             throw err;
@@ -34,12 +40,14 @@ useEffect(()=>{
         <Row>
           <Header />
         </Row>
+        {showLoader?( <CircularProgress/>):
+            (
         <Row className="content-layout">
           <Col sm={8} lg={true}>
             <Row className="Image">
               <Image
                 className="content"
-                src={product.Image}
+                src={`data:image/png;base64,${product.Image}`}
               />
             </Row>
             <Row className="Description">
@@ -69,6 +77,7 @@ useEffect(()=>{
             </Row>
           </Col>
         </Row>
+            )}
       </Container>
     </div>
   );
