@@ -6,6 +6,16 @@ import "./Form3.scss";
 import dropdown from "../component/dropdown";
 const Form3 = (props) => {
   let history = useHistory();
+  const[Price,setPrice] = useState();
+  const onHandleChange = (e)=>{
+    // if(e.target.value.includes(",")){
+    //   e.target.value =  e.target.value.split(',').join();
+    // }else{
+    //   e.target.value =  e.target.value.split(',').join();
+    // }
+    props.onChange(e);
+    setPrice(e.target.value);
+  };
   return (
     <div className="container">
       <Container fluid>
@@ -23,7 +33,8 @@ const Form3 = (props) => {
                   type="input"
                   placeholder="Enter Price"
                   name="Price"
-                  onChange={(e) => props.onChange(e)}
+                  value = {Price}
+                  onChange={(e) => onHandleChange(e)}
                 />
               </Form>
               {/* <Button

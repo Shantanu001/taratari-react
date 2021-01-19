@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "react-dropzone-uploader/dist/styles.css";
 import Dropzone from "react-dropzone-uploader";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Form2 = (props) => {
+  //const [showLoader,setLoaderActive] = useState(false);
+
   // specify upload params and url for your files
   const getUploadParams = ({ meta }) => {
     return { url: "https://httpbin.org/post" };
@@ -11,7 +14,9 @@ const Form2 = (props) => {
   // called every time a file's `status` changes
   const handleChangeStatus = ({ meta, file }, status) => {
     console.log(status, meta, file);
+    if (status === "uploading") {props.showNextButton(true);}
     if (status === "done") {
+      //setLoaderActive(false);
       console.log("url", meta.previewUrl);
       getBase64Image(meta.previewUrl, function (result) {
         console.log(result);
@@ -21,6 +26,7 @@ const Form2 = (props) => {
         event.target.value = result;
         console.log("event created", event);
         props.onChange(event);
+        props.showNextButton(false);
       });
     }
   };
@@ -50,13 +56,13 @@ const Form2 = (props) => {
     console.log(files.map((f) => f.meta));
   };
 
-  return (
+  return ( 
     <Dropzone
       getUploadParams={getUploadParams}
       onChangeStatus={handleChangeStatus}
-      onSubmit={handleSubmit}
+      //onSubmit={handleSubmit}
       accept="image/*"
-    />
-  );
+    />)
+    
 };
 export default Form2;
