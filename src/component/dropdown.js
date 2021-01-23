@@ -4,15 +4,18 @@ import {Dropdown} from 'react-bootstrap';
 import './header.scss';
 
  function Dropdowns(props){
+     const onSelectCategory = (val)=>{
+         console.log("2323",val);
+     }
     const [isOpen,setOpen] = useState(false);
-    console.log("here",props.list);
+    console.log("here",props);
 
         return (
         
                         <Dropdown onMouseEnter = { (e)=>setOpen(true) }
                         onMouseLeave = { (e)=>setOpen(false)}
                         show={isOpen}>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            <Dropdown.Toggle variant="success" id="dropdown-basic" onClick={e=>{onSelectCategory(e)}}>
                                 {props.title}
                             </Dropdown.Toggle>
                             <Dropdown.Menu>

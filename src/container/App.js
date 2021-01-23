@@ -23,7 +23,7 @@ function App() {
           <Route path='/form1' component={Form1}/>
           <Route path='/form2' component={Form2}/>
           <Route path='/form3' component={Form3}/>
-          <Route path='/SellerForm/:form' component={HorizontalLabelPositionBelowStepper} />
+          <Route path='/SellerForm/:Category' component={HorizontalLabelPositionBelowStepper} />
         </Switch>
       </Router>
     </div>

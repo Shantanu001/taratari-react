@@ -33,7 +33,8 @@ function getSteps() {
   return ["Enter Product Details", "Upload Images", "Enter Price"];
 }
 
-export default function HorizontalLabelPositionBelowStepper() {
+export default function HorizontalLabelPositionBelowStepper(props) {
+  console.log(props);
   var history = useHistory();
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -79,6 +80,7 @@ export default function HorizontalLabelPositionBelowStepper() {
   const onSubmit = () => {
     console.log("onsubmit", FormData);
     //setLoaderActive(true);
+    FormData['Category'] = props.match.params.Category;
     let url = process.env.REACT_APP_BASE_URL + "/addProductToSell";
     axios
       .post(url, FormData)
